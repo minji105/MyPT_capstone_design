@@ -1,0 +1,180 @@
+nav {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+}
+
+nav ul {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Heebo', sans-serif;
+  font-size: 13px;
+  position: relative;
+}
+
+nav ul .navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+nav ul .navMenu {
+  display: none;
+}
+
+nav ul .navBar li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+nav ul .navBar .navLogo {
+  padding: 16px 16px 16px 160px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+nav ul .navBar .navMenuContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+
+nav ul .navBar .navMenuContainer .navMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px;
+  cursor: pointer;
+}
+
+nav ul .navBar .navMenuContainer .navMenu:hover {
+  color: #685cec;
+}
+
+nav ul .navBar .navMenuContainer .dropDown:hover .dropDownContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+nav ul .navBar .navMenuContainer .dropDown .dropDownContent {
+  display: none;
+  position: absolute;
+  top: 40px;
+  height: 40px;
+  min-width: 80px;
+  margin-left: 16px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px lightgray;
+  box-shadow: 0 0 10px lightgray;
+}
+
+nav ul .navBar .navMenuContainer .dropDown .dropDownContent .navTutorial:hover {
+  color: #685cec;
+  cursor: pointer;
+}
+
+nav ul .navBar .navLogin {
+  padding: 16px;
+  margin-right: 150px;
+}
+
+nav ul .navMenu .navMenuBtn {
+  position: absolute;
+  right: 32px;
+  top: 20px;
+}
+
+nav ul .navMenu .navMenuBtn svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  nav ul .navBar .navLogo {
+    position: absolute;
+    left: 0px;
+    top: 6px;
+    padding: 16px 16px 16px 32px;
+  }
+
+  nav ul .navBar li:nth-child(2) {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+  }
+
+  nav ul .navBar li:nth-child(2) .navMenuContainer {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: 0.2px solid #685cec;
+  }
+
+  nav ul .navBar li:nth-child(2) .navMenuContainer .dropDown:hover .dropDownContent {
+    display: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  nav ul .navBar li:nth-child(2) .navMenuContainer .navMenu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-bottom: 0.2px solid #685cec;
+  }
+
+  nav ul .navBar li:nth-child(2) .navMenuContainer .navMenu:hover {
+    background-color: #685cec;
+    color: white;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+
+  nav ul .navBar li:nth-child(2) .active {
+    display: block;
+  }
+
+  nav ul .navBar .navLogin {
+    position: absolute;
+    padding: 16px;
+    margin: 0px;
+    right: 64px;
+    top: 8px;
+  }
+
+  nav ul .navMenu {
+    display: block;
+  }
+}

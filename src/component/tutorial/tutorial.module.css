@@ -1,0 +1,23 @@
+.tutorialContainer .tutorialBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .tutorialContainer .tutorialBox .tutorialVideo {
+    width: 80%;
+    height: calc(80vw * 0.563);
+    margin-top: 60px;
+  }
+  
+  .tutorialContainer .tutorialBox .visibilityHidden {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+    border: 0px;
+    border: none;
+    margin-top: 0px;
+  }

@@ -1,0 +1,94 @@
+.mainContainer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(images/bg1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/bg1.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 50px;
+  padding-top: 100px;
+  font-family: 'Nanum Gothic', sans-serif;
+  color: white;
+}
+
+.mainContainer h1 {
+  font-size: 6vw;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.mainContainer h2 {
+  font-size: 24px;
+  width: 50%;
+  margin-bottom: 24px;
+}
+
+.mainContainer button {
+  width: 110px;
+  height: 40px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.mainContainer button:hover {
+  background-color: #685cec;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.mainContainer button:hover a {
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.mainContainer .exerciseOption {
+  margin: 10px 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainContainer .exerciseOption .exerciseOptionOp {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainContainer .exerciseOption .exerciseOptionOp label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  margin-left: 6px;
+}
+
+.mainContainer .exerciseOption .exerciseOptionOp .plankOption {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.mainContainer .exerciseOption .exerciseOptionOp .pushUpOption {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.mainContainer .active {
+  display: block;
+}

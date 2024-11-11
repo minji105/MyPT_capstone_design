@@ -1,0 +1,126 @@
+.boardList {
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boardWriteFormContainer {
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .boardWriteForm {
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 14px;
+    width: 80%;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 6fr;
+    grid-template-columns: 1fr 9fr;
+    margin-top: 40px;
+  }
+  .explainForm {
+    padding-right: 10px;
+  }
+  .inputForm {
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    padding: 0px 0px 0px 20px;
+    font-size: 14px;
+  }
+  .itleForm {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 38.5px;
+  }
+  .contentForm {
+    padding-top: 15px;
+    width: 100%;
+    height: 354px;
+  }
+  .boardWriteBtn {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .boardListBtn {
+    height: 40px;
+  }
+  .smallBtn {
+    width: 54px;
+    height: 40px;
+    background-color: rgb(234, 234, 234);
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 20px 0px 0px 20px;
+    transition: 0.5s;
+  }
+  .smallBtn:hover {
+    background-color: #685cec;
+    border: #685cec;
+    color: white;
+  }
+  .writeBtnContainer {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .boardContainer {
+    font-family: "Nanum Gothic", sans-serif;
+    width: 80%;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .boardListSize {
+    font-family: "Nanum Gothic", sans-serif;
+    width: 80%;
+    display: flex;
+    margin-top: 40px;
+    justify-content: flex-start;
+  }
+  
+  .sizeNum {
+    color: #685cec;
+    text-indent: 5px;
+  }
+  
+  .boardTable {
+    width: 100%;
+    font-weight: normal;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 14px 0px;
+  }
+  
+  thead th {
+    font-weight: normal;
+    border-bottom: 1px solid black;
+  }
+  
+  thead th:nth-child(1) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 55%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 15%;
+  }
+  
