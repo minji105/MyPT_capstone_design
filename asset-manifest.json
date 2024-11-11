@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.0521e9a8.css",
-    "main.js": "/static/js/main.ac2f2b38.js",
-    "static/media/bg1.jpg": "/static/media/bg1.af7552596d5820d4df0e.jpg",
-    "index.html": "/index.html",
-    "main.0521e9a8.css.map": "/static/css/main.0521e9a8.css.map",
-    "main.ac2f2b38.js.map": "/static/js/main.ac2f2b38.js.map"
+    "main.css": "/minji105/MyPT_capstone_design/static/css/main.cb70345b.css",
+    "main.js": "/minji105/MyPT_capstone_design/static/js/main.442f192e.js",
+    "static/media/bg1.jpg": "/minji105/MyPT_capstone_design/static/media/bg1.af7552596d5820d4df0e.jpg",
+    "index.html": "/minji105/MyPT_capstone_design/index.html",
+    "main.cb70345b.css.map": "/minji105/MyPT_capstone_design/static/css/main.cb70345b.css.map",
+    "main.442f192e.js.map": "/minji105/MyPT_capstone_design/static/js/main.442f192e.js.map"
   },
   "entrypoints": [
-    "static/css/main.0521e9a8.css",
-    "static/js/main.ac2f2b38.js"
+    "static/css/main.cb70345b.css",
+    "static/js/main.442f192e.js"
   ]
 }
