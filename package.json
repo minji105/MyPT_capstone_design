@@ -7,6 +7,7 @@
     "@koa/cors": "^4.0.0",
     "@mediapipe/pose": "^0.5.1675469404",
     "@tensorflow-models/pose-detection": "^2.1.0",
+    "@tensorflow/tfjs": "^4.22.0",
     "@tensorflow/tfjs-core": "^4.7.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -32,6 +33,7 @@
     "mongodb": "^5.6.0",
     "mongoose": "^7.2.2",
     "nodemon": "^2.0.22",
+    "p5": "^1.11.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.7",
@@ -44,19 +46,15 @@
     "sanitize-html": "^2.10.0",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://minji105.github.io/MyPT_capstone_design",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "backend": "nodemon main.js",
-    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\"",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -75,5 +73,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "proxy": "http://localhost:3001"
+  "proxy": "http://localhost:3001",
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  }
 }

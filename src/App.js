@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import { Routes, Route as ReactRoute } from 'react-router-dom';
 import Plank from './component/exercise/Plank.js';
 import PushUp from './component/exercise/PushUp.js';
