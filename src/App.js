@@ -13,6 +13,7 @@ import BoardList from './component/community/BoardList.js';
 import BoardWriteForm from './component/community/BoardWriteForm.js';
 import BoardDetail from './component/community/BoardDetail.js';
 import BoardEditForm from './component/community/BoardEditForm.js';
+import Record from './component/Record.js';
 import { AuthProvider } from './contexts/AuthContext.js';
 import './App.css';
 
@@ -31,6 +32,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/exercise/plank" element={<Plank />} />
             <Route path="/exercise/pushup" element={<PushUp />} />
+            <Route path="/record" element={<Record />} />
             <Route path="/community" element={<BoardList />} />
             <Route path="/community/write" element={<BoardWriteForm />} />
             <Route path="/community/:postId" element={<BoardDetail />} />

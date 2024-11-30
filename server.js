@@ -9,6 +9,7 @@ require('dotenv').config();
 
 const User = require('./models/user');
 const Board = require('./models/board');
+const Exercise = require('./models/exercise');
 
 const app = express();
 app.use(express.json());
@@ -144,6 +145,35 @@ app.delete('/api/posts/:boardId', async (req, res) => {
     res.status(200).json({ message: 'Post deleted successfully' });
   } catch (err) {
     res.status(500).json({ message: 'Failed to delete post', err });
+  }
+})
+
+// 운동 기록 저장 API
+app.post('/api/save-exercise', async (req, res) => {
+  const { exerciseType, user, duration, date } = req.body;
+
+  try {
+    const record = new Exercise({ exerciseType, user, duration, date });
+    await record.save();
+    res.status(200).json({ message: 'Save success' });
+    console.log("save success");
+  } catch (err) {
+    res.status(500).json({ message: 'Failed to save', err });
+    console.log("Failed to save");
+  }
+})
+
+// 운동 기록 조회 API
+app.get('/api/save-exercise/:userId', async (req, res) => {
+  try {
+    console.log("Received userId:", req.params.userId);
+    const record = await Exercise.find({ user: req.params.userId });
+    if (!record || record.length === 0) {
+      return res.status(404).json({ message: 'Record not found' });
+    }
+    res.json(record);
+  } catch (err) {
+    res.status(500).json({ message: 'Failed to fetch record', error: err.message });
   }
 })
 

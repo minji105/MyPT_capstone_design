@@ -52,6 +52,7 @@ const Nav = () => {
 								</div>
 							</div>
 							<div><Link to="/community" className={style.navMenu}>Community</Link></div>
+							<div><Link to="/record" className={style.navMenu}>Record</Link></div>
 						</div>}
 					</li>
 					<li>

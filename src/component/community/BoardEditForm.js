@@ -2,23 +2,25 @@ import { Link } from 'react-router-dom';
 import style from './Board.module.css'
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { useAuth } from '../../contexts/AuthContext';
 
-const BoardEditForm = ({ userId }) => {
+const BoardEditForm = () => {
 	const { postId } = useParams();
 	const [title, setTitle] = useState('');
 	const [content, setContent] = useState('');
 	const [error, setError] = useState('');
+	const { userId } = useAuth();
 
 	useEffect(() => {
-    if (postId) {
-      fetch(`http://localhost:3001/api/posts/${postId}`)
-        .then(res => res.json())
+		if (postId) {
+			fetch(`http://localhost:3001/api/posts/${postId}`)
+				.then(res => res.json())
 				.then(data => {
-						setTitle(data.title);
-						setContent(data.content);
+					setTitle(data.title);
+					setContent(data.content);
 				})
-    }
-  }, [postId]);
+		}
+	}, [postId]);
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
@@ -55,7 +57,7 @@ const BoardEditForm = ({ userId }) => {
 				<input
 					name="title"
 					className={`${style.inputForm} ${style.titleForm}`}
-					type="text" 
+					type="text"
 					value={title}
 					placeholder="글 제목을 입력해주세요."
 					required

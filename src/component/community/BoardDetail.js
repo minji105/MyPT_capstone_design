@@ -10,7 +10,7 @@ const BoardDetail = () => {
 
 	useEffect(() => {
 		if (postId) {
-			fetch(`http://localhost:3000/api/posts/${postId}`)
+			fetch(`http://localhost:3001/api/posts/${postId}`)
 				.then(res => res.json())
 				.then(data => setPost(data));
 		}
